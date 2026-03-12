@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Price Monitor</title>
+</head>
+
+<body>
+
+<h1>Histórico de preços</h1>
+
+<table border="1">
+<tr>
+<th>Data</th>
+<th>Produto</th>
+<th>Preço</th>
+</tr>
+
+{% for row in data %}
+<tr>
+<td>{{ row[0] }}</td>
+<td>{{ row[1] }}</td>
+<td>{{ row[2] }}</td>
+</tr>
+{% endfor %}
+
+</table>
+
+</body>
+</html>
